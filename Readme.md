@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Александр Масленников](https://up.htmlacademy.ru/htmlcss-individual/2/user/1866133).
-* Наставник: [Неизвестный Енот]().
+* Наставник: [Екатерина Комнатная](https://htmlacademy.ru/profile/id215761).
 * Рабочий проект: [Седона](https://seovoodoo.github.io/1866133-sedona-2/).
 
 ---
