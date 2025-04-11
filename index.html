@@ -6,7 +6,7 @@
         <title>Седона - город штата Аризона</title>
     </head>
     <body>
-        <header class="main-header">
+        <header class="main-header" data-test="header">
             <nav class="navigation">
                 <a class="navigation-logo" href="index.html">
                     <img src="" width="140" height="70" alt="логотип сайта">
@@ -41,12 +41,12 @@
                 </a>
             </nav>
         </header>
-        <main class="main-index">
-            <section class="welcome">
+        <main class="main-index" data-test="main">
+            <section class="welcome" data-test="hero">
                 <h1 class="visually-hidden">Седона - городок в Аризоне</h1>
                 <img src="" alt="Welcome to the gorgeous">
             </section>
-            <section class="advantages">
+            <section class="advantages" data-test="advantages">
                 <h2 class="visually-hidden">Преимущества города Седона</h2>
                 <p class="pseudo-title">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</p>
                 <p class="section-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
@@ -94,7 +94,7 @@
                     </li>
                 </ul>
             </section>
-            <section class="hostel-search">
+            <section class="hostel-search" data-test="search">
                 <h2 class="visually-hidden">Забронировать гостинницу в Седоне</h2>
                 <p class="pseudo-title">Заинтересовались?</p>
                 <p class="section-description">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
@@ -104,8 +104,8 @@
             </section>
 
         </main>
-        <footer>
-            <section class="footer-header">
+        <footer data-test="footer">
+            <section class="footer-top" data-test="subscribe">
                 <h2 class="footer-header-title color-white">Подпишитесь на рассылку</h2>
                 <p class="section-description color-white">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
                 <form action="https://echo.htmlacademy.ru/" method="post">

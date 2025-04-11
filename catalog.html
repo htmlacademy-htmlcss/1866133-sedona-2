@@ -6,7 +6,7 @@
         <title>Каталог</title>
     </head>
     <body>
-        <header class="main-header">
+        <header class="main-header" data-test="header">
             <nav class="navigation">
                 <a class="navigation-logo" href="index.html">
                     <img src="" width="140" height="70" alt="логотип сайта">
@@ -41,8 +41,8 @@
                 </a>
             </nav>
         </header>
-        <main class="main-inner">
-            <section class="filters">
+        <main class="main-inner" data-test="main">
+            <section class="filters" data-test="filter">
                 <h1 class="filters-title">Гостиницы Седоны</h1>
                 <ul class="breadcrumbs-list">
                     <li class="breadcrumbs-item">
@@ -126,7 +126,7 @@
                     <button class="btn btn-reset" type="reset">Сбросить</button>
                 </form>
             </section>
-            <section class="catalog-hotel">
+            <section class="catalog-hotel" data-test="catalog">
                 <h2 class="visually-hidden">Список гостиниц</h2>
                 <p class="pseudo-title">Найдено гостиниц: <span>38</span></p>
                 <select class="control-select" aria-label="Сортировка">
@@ -207,8 +207,8 @@
                 </ul>
             </section>
         </main>
-        <footer>
-            <section class="footer-header">
+        <footer data-test="footer">
+            <section class="footer-top" data-test="subscribe">
                 <h2 class="pseudo-title">Подпишитесь на рассылку</h2>
                 <p class="section-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
                 <form action="https://echo.htmlacademy.ru/" method="post">
