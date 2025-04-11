@@ -8,7 +8,7 @@
     <body>
         <header class="main-header">
             <nav class="navigation">
-                <a class="navigation-logo" href="/">
+                <a class="navigation-logo" href="index.html">
                     <img src="" width="140" height="70" alt="логотип сайта">
                 </a>
                 <ul class="navigation-list">
@@ -23,7 +23,7 @@
                     </li>
                 </ul>
 
-                <ul class="navigation-list navigation-user">
+                <ul class="navigation-user">
                     <li class="navigation-item">
                         <a class="navigation-link navigation-user-link-search" href="">
                             <span class="visually-hidden">Поиск</span>
@@ -37,7 +37,7 @@
                     </li>
                 </ul>
                 <a class="btn btn-header" href="#">
-                    <span>Хочу сюда!</span>
+                    Хочу сюда!
                 </a>
             </nav>
         </header>
@@ -46,14 +46,14 @@
                 <h1 class="filters-title">Гостиницы Седоны</h1>
                 <ul class="breadcrumbs-list">
                     <li class="breadcrumbs-item">
-                        <a class="breadcrumbs-link" href="/"><span class="visually-hidden">Главная</span></a>
+                        <a class="breadcrumbs-link" href="index.html"><span class="visually-hidden">Главная</span></a>
                     </li>
                     <li class="breadcrumbs-item">
                         <a class="breadcrumbs-link">Гостиницы</a>
                     </li>
                 </ul>
 
-                <form action="https://echo.htmlacademy.ru/" method="post">
+                <form action="https://echo.htmlacademy.ru/" method="get">
 
                     <fieldset class="catalog-filter-group">
                         <legend class="catalog-filter-group-name">Инфраструктура:</legend>
@@ -136,19 +136,19 @@
                 </select>
                 <ul class="layout-type">
                     <li class="layout-type-item">
-                        <button class="layout-type-tile" type="button">
+                        <a class="layout-type-tile" href="catalog.html?view=tile">
                             <span class="visually-hidden">Компоновка плиткой</span>
-                        </button>
+                        </a>
                     </li>
                     <li class="layout-type-item">
-                        <button class="layout-type-card" type="button">
+                        <a class="layout-type-card" href="catalog.html?view=card">
                             <span class="visually-hidden">Компоновка карточками</span>
-                        </button>
+                        </a>
                     </li>
                     <li class="layout-type-item">
-                        <button class="layout-type-list" type="button">
+                        <a class="layout-type-list" href="catalog.html?view=list">
                             <span class="visually-hidden">Компоновка списком</span>
-                        </button>
+                        </a>
                     </li>
                 </ul>
                 <ul class="product-list">
@@ -160,7 +160,7 @@
                         <p>Гостиница</p>
                         <p class="product-card_price">От 4000 ₽</p>
                         <a class="btn product-card_more-detailed" href="#">Подробнее</a>
-                        <button class="btn product-card_add-favorite" type="button" aria-label="Добавить в избранное">В избранное</button>
+                        <button class="btn product-card_add-favorite" type="button">В избранное</button>
                         <p class="product-card_stars product-card_stars-4"><span class="visually-hidden">4 звезды</span></p>
                         <p class="product-card_rating">Рейтинг: 8,5</p>
                     </li>
@@ -173,7 +173,7 @@
                         <p>Гостиница</p>
                         <p class="product-card_price">От 5000 ₽</p>
                         <a class="btn product-card_more-detailed" href="#">Подробнее</a>
-                        <button class="btn product-card_delete-favorite" type="button" aria-label="Убрать из избранного">В избранном</button>
+                        <button class="btn product-card_delete-favorite" type="button">В избранном</button>
                         <p class="product-card_stars product-card_stars-4"><span class="visually-hidden">4 звезды</span></p>
                         <p class="product-card_rating">Рейтинг: 9,2</p>
                     </li>
@@ -186,7 +186,7 @@
                         <p>Гостиница</p>
                         <p class="product-card_price">От 2500 ₽</p>
                         <a class="btn product-card_more-detailed" href="#">Подробнее</a>
-                        <button class="btn product-card_add-favorite" type="button" aria-label="Добавить в избранное">В избранное</button>
+                        <button class="btn product-card_add-favorite" type="button">В избранное</button>
                         <p class="product-card_stars product-card_stars-3"><span class="visually-hidden">3 звезды</span></p>
                         <p class="product-card_rating">Рейтинг: 6,9</p>
                     </li>
@@ -199,30 +199,11 @@
                         <p>Гостиница</p>
                         <p class="product-card_price">От 1500 ₽</p>
                         <a class="btn product-card_more-detailed" href="#">Подробнее</a>
-                        <button class="btn product-card_add-favorite" type="button" aria-label="Добавить в избранное">В избранное</button>
+                        <button class="btn product-card_add-favorite" type="button">В избранное</button>
                         <p class="product-card_stars product-card_stars-2"><span class="visually-hidden">2 звезды</span></p>
                         <p class="product-card_rating">Рейтинг: 5,0</p>
                     </li>
-                </ul>
-                <ul class="pagination-list">
-                  <li class="pagination-item">
-                    <a class="pagination-link pagination-current">1</a>
-                  </li>
-                  <li class="pagination-item">
-                    <a class="pagination-link" href="">2</a>
-                  </li>
-                  <li class="pagination-item">
-                    <a class="pagination-link" href="">3</a>
-                  </li>
-                  <li class="pagination-item">
-                    <a class="pagination-link" href="">4</a>
-                  </li>
-                  <li class="pagination-item">
-                    <span class="pagination-text">...</span>
-                  </li>
-                  <li class="pagination-item">
-                    <a class="pagination-link" href="">10</a>
-                  </li>
+
                 </ul>
             </section>
         </main>
