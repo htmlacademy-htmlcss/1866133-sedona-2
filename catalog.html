@@ -6,8 +6,8 @@
         <link rel="stylesheet" href="styles/style.css">
         <title>Каталог</title>
     </head>
-    <body>
-      <div class="container">
+    <body class="container">
+
         <header class="main-header" data-test="header">
             <nav class="navigation">
                 <a class="navigation-logo" href="index.html">
@@ -43,7 +43,7 @@
                 </a>
             </nav>
         </header>
-        <main class="main-inner" data-test="main">
+        <main class="main-container main-inner" data-test="main">
             <section class="filters" data-test="filter">
                 <h1 class="filters-title">Гостиницы Седоны</h1>
                 <ol class="breadcrumbs-list">
@@ -55,7 +55,7 @@
                     </li>
                 </ol>
 
-                <form action="https://echo.htmlacademy.ru/" method="get">
+                <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
 
                     <fieldset class="catalog-filter-group">
                         <legend class="catalog-filter-group-name">Инфраструктура:</legend>
@@ -124,39 +124,43 @@
                         <!-- <input class="toggle-min" type="range" value="0">
                         <input class="toggle-max" type="range" value="9000"> -->
                     </fieldset>
-                    <button class="btn btn-apply btn-blue" type="submit">Применить</button>
-                    <button class="btn btn-reset btn-transparent" type="reset">Сбросить</button>
+                    <div class="btn-wrapper">
+                      <button class="btn btn-apply btn-blue" type="submit">Применить</button>
+                      <button class="btn btn-reset btn-transparent" type="reset">Сбросить</button>
+                    </div>
                 </form>
             </section>
             <section class="catalog-hotel" data-test="catalog">
                 <h2 class="visually-hidden">Список гостиниц</h2>
-                <p class="pseudo-title">Найдено гостиниц: <span>38</span></p>
-                <select class="control-select" aria-label="Сортировка">
-                    <option value="low-cost">Сначала дешевые</option>
-                    <option value="expensive">Сначала дорогие</option>
-                    <option value="popular">Сначала популярные</option>
-                </select>
-                <ul class="layout-type">
-                    <li class="layout-type-item view-selected">
-                        <a class="layout-type-tile" href="catalog.html?view=tile">
-                            <span class="visually-hidden">Компоновка плиткой</span>
-                        </a>
-                    </li>
-                    <li class="layout-type-item">
-                        <a class="layout-type-card" href="catalog.html?view=card">
-                            <span class="visually-hidden">Компоновка карточками</span>
-                        </a>
-                    </li>
-                    <li class="layout-type-item">
-                        <a class="layout-type-list" href="catalog.html?view=list">
-                            <span class="visually-hidden">Компоновка списком</span>
-                        </a>
-                    </li>
-                </ul>
+                <div class="sort-wrapp">
+                  <p class="pseudo-title">Найдено гостиниц: <span>38</span></p>
+                  <select class="control-select" aria-label="Сортировка">
+                      <option value="low-cost">Сначала дешевые</option>
+                      <option value="expensive">Сначала дорогие</option>
+                      <option value="popular">Сначала популярные</option>
+                  </select>
+                  <ul class="layout-type">
+                      <li class="layout-type-item view-selected">
+                          <a class="layout-type-tile" href="catalog.html?view=tile">
+                              <span class="visually-hidden">Компоновка плиткой</span>
+                          </a>
+                      </li>
+                      <li class="layout-type-item">
+                          <a class="layout-type-card" href="catalog.html?view=card">
+                              <span class="visually-hidden">Компоновка карточками</span>
+                          </a>
+                      </li>
+                      <li class="layout-type-item">
+                          <a class="layout-type-list" href="catalog.html?view=list">
+                              <span class="visually-hidden">Компоновка списком</span>
+                          </a>
+                      </li>
+                  </ul>
+                </div>
                 <ul class="product-list">
                     <li class="product-card">
                         <a href="#" tabindex="-1">
-                            <img src="images/hotel-1.jpg" alt="Вид на звездное небо из ущелья в скале.">
+                            <img class="product-photo" src="images/hotel-1.jpg" width="300" height="212" alt="Вид на звездное небо из ущелья в скале.">
                         </a>
                         <a class="product-card-link" href="#" tabindex="-1">
                             <h3 class="product-card-title">Amara Resort & Spa</h3>
@@ -171,7 +175,7 @@
 
                     <li class="product-card">
                         <a  href="#" tabindex="-1">
-                            <img src="images/hotel-2.jpg" alt="Вид на горы и радугу.">
+                            <img class="product-photo" src="images/hotel-2.jpg" width="300" height="212" alt="Вид на горы и радугу.">
                         </a>
                         <a class="product-card-link" href="#" tabindex="-1">
                             <h3 class="product-card-title">Villas at Poco Diablo</h3>
@@ -186,7 +190,7 @@
 
                     <li class="product-card">
                         <a  href="#" tabindex="-1">
-                            <img src="images/hotel-3.jpg" alt="Большая красная гора и растительность на переднем плане.">
+                            <img class="product-photo" src="images/hotel-3.jpg" width="300" height="212" alt="Большая красная гора и растительность на переднем плане.">
                         </a>
                         <a class="product-card-link" href="#" tabindex="-1">
                             <h3 class="product-card-title">Desert Quail Inn</h3>
@@ -201,7 +205,7 @@
 
                     <li class="product-card">
                         <a  href="#" tabindex="-1">
-                            <img src="images/hotel-4.jpg" alt="Гора и начало рассвета.">
+                            <img class="product-photo" src="images/hotel-4.jpg" width="300" height="212" alt="Гора и начало рассвета.">
                         </a>
                         <a class="product-card-link" href="#" tabindex="-1">
                             <h3 class="product-card-title">GreenTree Inn</h3>
@@ -232,7 +236,7 @@
                         <a href="#" class="pagination-link">4</a>
                     </li>
                     <li class="pagination-item">
-                        <span class="pagination-text">...</span>
+                        <a class="pagination-link pagination-text">...</a>
                     </li>
                     <li class="pagination-item">
                         <a href="#" class="pagination-link">10</a>
@@ -244,7 +248,7 @@
             <section class="footer-top" data-test="subscribe">
                 <h2 class="pseudo-title">Подпишитесь на рассылку</h2>
                 <p class="section-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
-                <form action="https://echo.htmlacademy.ru/" method="post">
+                <form class="form-subscribe" action="https://echo.htmlacademy.ru/" method="post">
                     <input class="field-email page-inner" type="email" name="email" placeholder="Ваш e-mail" required>
                     <button class="btn btn-subscribe btn-blue" type="submit">Подписаться</button>
                 </form>
@@ -273,6 +277,6 @@
                 </a>
             </section>
         </footer>
-      </div>
+
     </body>
 </html>
