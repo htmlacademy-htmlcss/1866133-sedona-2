@@ -133,25 +133,25 @@
             <section class="catalog-hotel" data-test="catalog">
                 <h2 class="visually-hidden">Список гостиниц</h2>
                 <div class="sort-wrapp">
-                  <p class="pseudo-title">Найдено гостиниц: <span>38</span></p>
+                  <p class="catalog-hotel-title">Найдено гостиниц: <span>38</span></p>
                   <select class="control-select" aria-label="Сортировка">
                       <option value="low-cost">Сначала дешевые</option>
                       <option value="expensive">Сначала дорогие</option>
                       <option value="popular">Сначала популярные</option>
                   </select>
                   <ul class="layout-type">
-                      <li class="layout-type-item view-selected">
-                          <a class="layout-type-tile" href="catalog.html?view=tile">
+                      <li class="layout-type-item">
+                          <a class="layout-type-link layout-type-tile view-selected" href="catalog.html?view=tile">
                               <span class="visually-hidden">Компоновка плиткой</span>
                           </a>
                       </li>
                       <li class="layout-type-item">
-                          <a class="layout-type-card" href="catalog.html?view=card">
+                          <a class="layout-type-link layout-type-card" href="catalog.html?view=card">
                               <span class="visually-hidden">Компоновка карточками</span>
                           </a>
                       </li>
                       <li class="layout-type-item">
-                          <a class="layout-type-list" href="catalog.html?view=list">
+                          <a class="layout-type-link layout-type-list" href="catalog.html?view=list">
                               <span class="visually-hidden">Компоновка списком</span>
                           </a>
                       </li>
@@ -159,14 +159,14 @@
                 </div>
                 <ul class="product-list">
                     <li class="product-card">
-                        <a href="#" tabindex="-1">
+                        <a class="product-card-link-img" href="#" tabindex="-1">
                             <img class="product-photo" src="images/hotel-1.jpg" width="300" height="212" alt="Вид на звездное небо из ущелья в скале.">
                         </a>
-                        <a class="product-card-link" href="#" tabindex="-1">
+                        <a class="product-card-link-title" href="#" tabindex="-1">
                             <h3 class="product-card-title">Amara Resort & Spa</h3>
                         </a>
-                        <p>Гостиница</p>
-                        <p>От 4000 ₽</p>
+                        <p class="product-card-placement-facility">Гостиница</p>
+                        <p class="product-card-price">От 4000 ₽</p>
                         <a class="btn btn-more-detailed btn-brown" href="#">Подробнее</a>
                         <button class="btn btn-favorite btn-blue" type="button">В избранное</button>
                         <p class="product-card__stars product-card__stars-4"><span class="visually-hidden">Отель 4 звезды</span></p>
@@ -174,14 +174,14 @@
                     </li>
 
                     <li class="product-card">
-                        <a  href="#" tabindex="-1">
+                        <a class="product-card-link-img" href="#" tabindex="-1">
                             <img class="product-photo" src="images/hotel-2.jpg" width="300" height="212" alt="Вид на горы и радугу.">
                         </a>
-                        <a class="product-card-link" href="#" tabindex="-1">
+                        <a class="product-card-link-title" href="#" tabindex="-1">
                             <h3 class="product-card-title">Villas at Poco Diablo</h3>
                         </a>
-                        <p>Гостиница</p>
-                        <p>От 5000 ₽</p>
+                        <p class="product-card-placement-facility">Гостиница</p>
+                        <p class="product-card-price">От 5000 ₽</p>
                         <a class="btn btn-more-detailed btn-brown" href="#">Подробнее</a>
                         <button class="btn btn-favorite btn-green" type="button">В избранном</button>
                         <p class="product-card__stars product-card__stars-4"><span class="visually-hidden">Отель 4 звезды</span></p>
@@ -189,14 +189,14 @@
                     </li>
 
                     <li class="product-card">
-                        <a  href="#" tabindex="-1">
+                        <a class="product-card-link-img" href="#" tabindex="-1">
                             <img class="product-photo" src="images/hotel-3.jpg" width="300" height="212" alt="Большая красная гора и растительность на переднем плане.">
                         </a>
-                        <a class="product-card-link" href="#" tabindex="-1">
+                        <a class="product-card-link-title" href="#" tabindex="-1">
                             <h3 class="product-card-title">Desert Quail Inn</h3>
                         </a>
-                        <p>Гостиница</p>
-                        <p>От 2500 ₽</p>
+                        <p class="product-card-placement-facility">Гостиница</p>
+                        <p class="product-card-price">От 2500 ₽</p>
                         <a class="btn btn-more-detailed btn-brown" href="#">Подробнее</a>
                         <button class="btn btn-favorite btn-blue" type="button">В избранное</button>
                         <p class="product-card__stars product-card__stars-3"><span class="visually-hidden">Отель 3 звезды</span></p>
@@ -204,27 +204,24 @@
                     </li>
 
                     <li class="product-card">
-                        <a  href="#" tabindex="-1">
+                        <a class="product-card-link-img" href="#" tabindex="-1">
                             <img class="product-photo" src="images/hotel-4.jpg" width="300" height="212" alt="Гора и начало рассвета.">
                         </a>
-                        <a class="product-card-link" href="#" tabindex="-1">
+                        <a class="product-card-link-title" href="#" tabindex="-1">
                             <h3 class="product-card-title">GreenTree Inn</h3>
                         </a>
-                        <p>Гостиница</p>
-                        <p>От 1500 ₽</p>
+                        <p class="product-card-placement-facility">Гостиница</p>
+                        <p class="product-card-price">От 1500 ₽</p>
                         <a class="btn btn-more-detailed btn-brown" href="#">Подробнее</a>
                         <button class="btn btn-favorite btn-blue" type="button">В избранное</button>
                         <p class="product-card__stars product-card__stars-2"><span class="visually-hidden">Отель 2 звезды</span></p>
                         <p class="product-card-rating">Рейтинг: 5,0</p>
                     </li>
-
                 </ul>
+                <div class="decoration-line"></div>
                 <ul class="pagination-list">
                     <li class="pagination-item">
                         <a class="pagination-link pagination-link-current">1</a>
-                    </li>
-                    <li class="pagination-item">
-                        <a href="#" class="pagination-link">1</a>
                     </li>
                     <li class="pagination-item">
                         <a href="#" class="pagination-link">2</a>
@@ -246,7 +243,7 @@
         </main>
         <footer data-test="footer">
             <section class="footer-top" data-test="subscribe">
-                <h2 class="pseudo-title">Подпишитесь на рассылку</h2>
+                <h2 class="footer-top-title">Подпишитесь на рассылку</h2>
                 <p class="section-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
                 <form class="form-subscribe" action="https://echo.htmlacademy.ru/" method="post">
                     <input class="field-email page-inner" type="email" name="email" placeholder="Ваш e-mail" required>
@@ -277,6 +274,5 @@
                 </a>
             </section>
         </footer>
-
     </body>
 </html>
