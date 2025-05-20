@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
     <link rel="stylesheet" href="styles/style.css">
     <title>Седона - город штата Аризона</title>
   </head>
@@ -82,7 +83,7 @@
           </section>
           <section class="relax">
               <h2 class="visually-hidden">Отдых в Седоне</h2>
-              <p class="pseudo-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
+              <p class="pseudo-title">Приезжайте в Седону отдохнуть<br>в комфорте и уюте!</p>
               <p class="section-description mb-64">Опытный персонал и качественное обслуживание!</p>
               <ul class="relax-list">
                   <li class="relax-item">
@@ -103,9 +104,9 @@
               <h2 class="visually-hidden">Забронировать гостинницу в Седоне</h2>
               <p class="pseudo-title">Заинтересовались?</p>
               <p class="section-description">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-              <a class="btn btn-search btn-color-primary" href="#">
+              <button class="btn btn-search btn-color-primary" type="button">
                   поиск гостиницы в седоне
-              </a>
+              </button>
           </section>
 
       </main>
@@ -175,7 +176,7 @@
     </div>
     <div class="modal-container modal-container-close">
       <div class="modal-window modal-search-hostel">
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal-content">
@@ -208,7 +209,7 @@
                   <span class="visually-hidden">Убавить</span>
                 </button>
               </div>
-              <input class="quantity-input" id="adults" type="number" value="2">
+              <input class="quantity-input" id="adults" name="adults" type="number" value="2">
               <div class="btn-quantity-right-wrap">
                 <button class="btn-quantity btn-increase" type="button">
                   <span class="visually-hidden">Добавить</span>
@@ -238,7 +239,7 @@
                   <span class="visually-hidden">Убавить</span>
                 </button>
               </div>
-              <input class="quantity-input" id="children" type="number" value="2">
+              <input class="quantity-input" id="children" name="children" type="number" value="2">
               <div class="btn-quantity-right-wrap">
                 <button class="btn-quantity btn-increase" type="button">
                   <span class="visually-hidden">Добавить</span>
@@ -251,5 +252,6 @@
         </section>
       </div>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
