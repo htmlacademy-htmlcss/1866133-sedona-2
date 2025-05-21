@@ -5,17 +5,15 @@ const closeBtn =  document.querySelector(".modal-close-button");
 
 
 searchHostelBtn.addEventListener("click", function(){
-  // const scrollY = window.scrollY || document.documentElement.scrollTop;
-  // modalWindow.style.setProperty('--scroll-position', `${scrollY}px`);
-  // body.classList.add("no-scroll");
   body.style.overflow = "hidden";
+  body.style.paddingRight = "17px";
   modalWindow.classList.remove("modal-container-close");
-
 })
 
 closeBtn.addEventListener("click", function(){
-  modalWindow.classList.add("modal-container-close");
   body.style.overflow = "";
+  body.style.paddingRight = "";
+  modalWindow.classList.add("modal-container-close");
 })
 
 const handleKeydown = (e) => {
