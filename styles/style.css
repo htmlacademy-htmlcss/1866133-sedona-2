@@ -1456,7 +1456,8 @@ img {
   outline: 3px solid #83b3d3;
 }
 
-.modal-close-button:active {
+.modal-close-button:active::before,
+.modal-close-button:active::after {
   opacity: 0.3;
 }
 
