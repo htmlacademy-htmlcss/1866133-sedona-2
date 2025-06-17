@@ -161,6 +161,11 @@ img {
   opacity: 0.6;
 }
 
+.navigation-link:active,
+.navigation-user-link:active {
+  opacity: 0.2;
+}
+
 .navigation-user-link::before {
   content: "";
   position: absolute;
